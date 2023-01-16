@@ -9,7 +9,7 @@ let contexto = campo.getContext("2d")
     if (vacas) {
         var vaca =
       {
-        url:"vaca.png"
+        url:"imagenes/vaca.png"
       };
       vaca.imagen = new Image();
       vaca.imagen.src= vaca.url;
@@ -19,7 +19,7 @@ let contexto = campo.getContext("2d")
     else if (cerdos) {
       var cerdo =
       {
-        url:"cerdo.png"
+        url:"imagenes/cerdo.png"
       };
       cerdo.imagen = new Image();
       cerdo.imagen.src= cerdo.url;
@@ -29,7 +29,7 @@ let contexto = campo.getContext("2d")
     else if (pollos) {
       var pollo =
       {
-        url:"pollo.png"
+        url:"imagenes/pollo.png"
       };
       pollo.imagen = new Image();
       pollo.imagen.src= pollo.url;
