@@ -1,0 +1,31 @@
+body{
+    background: rgb(105, 105, 243);
+}
+
+canvas{
+    border-radius: 40px;
+    background-image: url(tile.png);
+}
+
+main{
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 40px;
+}
+
+label{
+    display: inline;
+}
+
+input{
+    display: none;
+}
+
+.animales{
+    border-radius: 50px;
+}
+
+.animales:hover{
+    background: rgb(79, 218, 109);
+}
