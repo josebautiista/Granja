@@ -1,7 +1,7 @@
-let campo = document.getElementById("villa").getContext("2d")
-
-  document.addEventListener("click", function(evento) {
-
+let campo = document.getElementById("villa")
+let contexto = campo.getContext("2d")
+  campo.addEventListener("click", function(evento) {
+    console.log(evento)
     var cerdos = document.getElementById("cerdos").checked
     var vacas = document.getElementById("vacas").checked
     var pollos = document.getElementById("pollos").checked
@@ -13,7 +13,7 @@ let campo = document.getElementById("villa").getContext("2d")
       };
       vaca.imagen = new Image();
       vaca.imagen.src= vaca.url;
-      campo.drawImage(vaca.imagen, evento.layerX - 40, evento.layerY - 40);
+      contexto.drawImage(vaca.imagen, evento.offsetX - 40, evento.offsetY - 40);
     }
 
     else if (cerdos) {
@@ -23,7 +23,7 @@ let campo = document.getElementById("villa").getContext("2d")
       };
       cerdo.imagen = new Image();
       cerdo.imagen.src= cerdo.url;
-      campo.drawImage(cerdo.imagen, evento.layerX - 40, evento.layerY - 40);
+      contexto.drawImage(cerdo.imagen, evento.offsetX - 40, evento.offsetY - 40);
     }
 
     else if (pollos) {
@@ -33,7 +33,7 @@ let campo = document.getElementById("villa").getContext("2d")
       };
       pollo.imagen = new Image();
       pollo.imagen.src= pollo.url;
-      campo.drawImage(pollo.imagen, evento.layerX - 40, evento.layerY - 40);
+      contexto.drawImage(pollo.imagen, evento.offsetX - 40, evento.offsetY - 40);
     }
 
   });

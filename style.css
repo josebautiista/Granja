@@ -1,5 +1,6 @@
 body{
     background: rgb(105, 105, 243);
+    text-align: center;
 }
 
 canvas{
@@ -8,10 +9,18 @@ canvas{
 }
 
 main{
+    margin: 50px auto;
+    width: 80%;
     padding: 20px;
     background: white;
     text-align: center;
     border-radius: 40px;
+    height: 250px;
+}
+
+h1{
+    font-family: 'Jost', sans-serif;
+    color: darkblue;
 }
 
 label{
@@ -24,8 +33,11 @@ input{
 
 .animales{
     border-radius: 50px;
+    margin: 20px 40px;
+    transition: 1s all
 }
 
 .animales:hover{
+    padding: 10px;
     background: rgb(79, 218, 109);
 }
