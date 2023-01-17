@@ -39,5 +39,5 @@ input{
 
 canvas{
     border-radius: 40px;
-    background-image: url(tile.png);
+    background-image: url(imagenes/tile.png);
 }
